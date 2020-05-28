@@ -15,9 +15,11 @@
      * www/ -- web directory, store .py files
        * static/ -- static files
        * templates/ -- templates files
-       * ios/ -- iOS App 
-       * LICENSE -- LICENSE code
+     * ios/ -- iOS App 
+     * LICENSE -- LICENSE code
 # Day 2
+1. The Web App is based on asyncio, use aiohttp to write a app.py
+2. 
   
 
 
