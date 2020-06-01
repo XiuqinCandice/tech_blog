@@ -27,6 +27,7 @@
 4. go to browser and check localhost:9000, it will return html header 'First Try'
 
 # Day 3 Write ORM
+[Day3](https://github.com/XiuqinCandice/tech_blog/tree/Day-3)
 (use MySQL)
 1. all the data, including user info, published blogs and comments are all stored in databasae
 2. encapsulated 'SELECCT, INSERT, UPDATE and DELETE' to encapsulate functions
