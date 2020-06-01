@@ -19,14 +19,24 @@
      * ios/ -- iOS App 
      * LICENSE -- LICENSE code
   
-# Day 2
+# Day 2 Build the Web App Structure
 
 1. The Web App is based on asyncio, use aiohttp to write a app.py
 2. use aiohttp
 3. run app.py under www/, The Web App will listen for HTTP requests on port 9000, response on home page '/'
 4. go to browser and check localhost:9000, it will return html header 'First Try'
 
-# Day 3
-  
+# Day 3 Write ORM
+(use MySQL)
+1. all the data, including user info, published blogs and comments are all stored in databasae
+2. encapsulated 'SELECCT, INSERT, UPDATE and DELETE' to encapsulate functions
+3. Web framework used asyncio aioheep based on coroutine asynchronous model, all users got servics from one thread, have to be fast, so we should use asynchronous
+4. Once we use asynchronous, every step is asynchrous
+5. **aiomysql** provided asynchronous IO drive for MySQL database
+6. Build the connection pool
+   1. every http request can get sql connection from the sql
+   2. we don' have to turn on and off database connection, can reuse
+   
+
 
 

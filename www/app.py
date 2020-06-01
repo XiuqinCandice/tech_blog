@@ -13,7 +13,7 @@ routes = web.RouteTableDef()
 def index(request):
     return web.Response(body=b'<h1>First Try</h1>', content_type='text/html')
 
-
+@asyncio.coroutine
 def init():
     app = web.Application()
     app.add_routes([web.get('/', index)])
