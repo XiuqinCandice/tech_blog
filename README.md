@@ -38,6 +38,7 @@
    1. every http request can get sql connection from the sql
    2. we don' have to turn on and off database connection, can reuse
    
+# Day 4 Write model for user, blog, comment
 
 
 

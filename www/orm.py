@@ -66,7 +66,7 @@ def create_args_string(num):
 
 # Field and field subclass
 class Field(object):
-
+# when writing Field class and its subclass, we pass a 'default' parameters to fill in the default value
     def __init__(self, name, column_type, primary_key, default):
         self.name = name
         self.column_type = column_type
