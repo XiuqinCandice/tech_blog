@@ -2,7 +2,7 @@
 
 -- mysql -u www-data -p
 -- password: www-data
--- use tech_blog;
+-- use tech_blog database;
 -- select * from users;
 
 drop database if exists tech_blog;
