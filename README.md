@@ -44,5 +44,8 @@
 # Day 5 Write Web Framework
 [Day5](https://github.com/XiuqinCandice/tech_blog/tree/Day-5)
 
+# Day 6 Write Config Files
+[Day6](https://github.com/XiuqinCandice/tech_blog/tree/Day-6)
+
 
 
