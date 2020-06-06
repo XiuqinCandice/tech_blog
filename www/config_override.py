@@ -9,6 +9,6 @@ __author__ = 'Xiuqin Gao'
 
 configs = {
     'db': {
-        'host': '192.168.0.100'
+        'host': '127.0.0.1'
     }
 }

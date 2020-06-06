@@ -47,5 +47,6 @@
 # Day 6 Write Config Files
 [Day6](https://github.com/XiuqinCandice/tech_blog/tree/Day-6)
 
-
+# Day 7 Write MVC
+[Day 7](https://github.com/XiuqinCandice/tech_blog/tree/Day-7)
 
