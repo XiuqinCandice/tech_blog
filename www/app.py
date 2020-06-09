@@ -30,6 +30,7 @@ def init_jinja2(app, **kw):
         variable_end_string = kw.get('variable_end_string', '}}'),
         auto_reload = kw.get('auto_reload', True)
     )
+
     path = kw.get('path', None)
     if path is None:
         path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
@@ -101,15 +102,15 @@ async def response_factory(app, handler):
 def datetime_filter(t):
     delta = int(time.time() - t)
     if delta < 60:
-        return u'1分钟前'
+        return u' 1 minute ago'
     if delta < 3600:
-        return u'%s分钟前' % (delta // 60)
+        return u'%s minutes ago' % (delta // 60)
     if delta < 86400:
-        return u'%s小时前' % (delta // 3600)
+        return u'%s hour(s) ago' % (delta // 3600)
     if delta < 604800:
-        return u'%s天前' % (delta // 86400)
+        return u'%s day(s) ago' % (delta // 86400)
     dt = datetime.fromtimestamp(t)
-    return u'%s年%s月%s日' % (dt.year, dt.month, dt.day)
+    return u'%syear%smonth%sday' % (dt.year, dt.month, dt.day)
 
 async def init(loop):
     await orm.create_pool(loop=loop, **configs['db'])
@@ -117,7 +118,7 @@ async def init(loop):
         logger_factory, response_factory
     ])
     init_jinja2(app, filters=dict(datetime=datetime_filter))
-    add_routes(app, 'handlers')
+    add_routes(app, 'url_handlers')
     add_static(app)
     srv = await loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000...')
