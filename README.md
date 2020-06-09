@@ -51,5 +51,5 @@
 [Day 7](https://github.com/XiuqinCandice/tech_blog/tree/Day-7)
 
 # Day 8 Front-End
-[Day 8] (https://github.com/XiuqinCandice/tech_blog/tree/Day-8)
+[Day 8](https://github.com/XiuqinCandice/tech_blog/tree/Day-8)
 
