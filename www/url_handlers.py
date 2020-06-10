@@ -23,3 +23,11 @@ def index(request):
         '__template__': 'blogs.html',
         'blogs': blogs
     }
+
+# using @api to change the function into a JSON format REST API, which to get registered user information
+@get('/api/users')
+async def api_get_users():
+    users = await User.findAll(orderBy='created_at desc')
+    for u in users:
+        u.passwd = 'www-data'
+    return dict(users=users)
