@@ -57,5 +57,5 @@
 [Day 9](https://github.com/XiuqinCandice/tech_blog/tree/Day-9)
 
 # Day 10 Login and signup
-[Day 10](https://github.com/XiuqinCandice/tech_blog/blob/Day-10/README.md)
+[Day 10](https://github.com/XiuqinCandice/tech_blog/blob/Day-10)
 
