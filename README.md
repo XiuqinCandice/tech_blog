@@ -56,5 +56,5 @@
 # Day 9 API
 [Day 9](https://github.com/XiuqinCandice/tech_blog/tree/Day-9)
 
-# Day 10 User Login and Signup
-[Day 10](https://github.com/XiuqinCandice/tech_blog/tree/Day-10)
+# Day 10 Login and signup
+[Day 10](https://github.com/XiuqinCandice/tech_blog/blob/Day-10)
