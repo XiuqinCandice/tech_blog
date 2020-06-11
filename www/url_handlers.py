@@ -139,3 +139,11 @@ async def api_register_user(*, email, name, passwd):
     r.content_type = 'application/json'
     r.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
     return r
+
+
+@get('/api/users')
+async def api_get_users():
+    users = await User.findAll(orderBy='created_at desc')
+    for u in users:
+        u.passwd = '******'
+    return dict(users=users)
